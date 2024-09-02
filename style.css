@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
@@ -61,20 +62,19 @@ body {
 }
 
 
+
+@media (min-width:451px) and (max-width:650px){
+    .fixed-img-text{
+        font-size: 44px;
+    }
+}
+
 @media (min-width:451px) and (max-width:950px) {
     .list-2{
         display: none;
     }
     .list-1{
         display: none;
-    }
-    .footer-info{
-        justify-content: center;
-        align-items: center;
-        margin-top: 80px;
-    }
-    .text-center-1{
-        text-align: center;
     }
     .image-div img{
         height: 450px;
@@ -96,10 +96,6 @@ body {
         width: 60%;
         margin: auto;
     }
-    .news-box{
-        border-top-left-radius: 0.75rem;
-        border-top-right-radius: 0.75rem;
-    }
 }
 
 @media screen and (max-width:450px) {
@@ -108,11 +104,6 @@ body {
     }
     .list-1{
         display: none;
-    }
-    .footer-info{
-        justify-content: center;
-        align-items: center;
-        margin-top: 80px;
     }
     .text-center-1{
         text-align: center;
@@ -133,17 +124,16 @@ body {
     .color-yellow{
         padding-top: 16px;
     }
-    .news-box{
-        border-top-left-radius: 0.75rem;
-        border-top-right-radius: 0.75rem;
+    .fixed-img-text{
+        font-size: 36px;
     }
 }
 @media screen and (max-width:350px){
     .text-container h1{
         font-size: 60px;
     }
-    .all-events{
-        margin-left: 32px;
+    .testimonial-1{
+        font-size: 20px;
     }
 }
 .image-div{
@@ -182,4 +172,21 @@ body {
 .contact-form input, .contact-form textarea{
     border-bottom: 1px solid gray;
     padding-bottom: 8px;
+}
+.services-home-page{
+    background-image: url(./images/services-home-page.avif);
+}
+.service-cards:hover{
+    background-color: #f26522;
+    border-radius: 16px;
+    color: white;
+}
+.service-cards:hover .ser-svg{
+    color: white;
+}
+.service-img-1{
+    background-image: url(images/45f6edcd-5032-417e-b61a-d6a3bc556c35-2.jpg);
+}
+.service-img-2{
+    background-image: url(images/new-download.jpg);
 }
