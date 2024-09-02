@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fixed-image{
+    background-image: url(./images/fixed-img.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slideshow-container{
+    background-image: url(./images/bg-2.jpg);
+}
+.navbar a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.first-half{
+    background-image: url(./images/quote-1.jpg);
+}
+.second-half{
+    background-image: url(./images/quote-2.jpg);
+}
+.kid-image{
+    background-image: url(./images/42d17dca-c32a-493d-a269-bd5efdb4d739.jfif);
+}
+.navbar a:hover{
+    color: #006838;
+    font-size: larger;
+}
+/* Text Animation */
+.text-container{
+    transform: translateX(5%);
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+}
+
+.text-container h1{
+    animation: moveInLeft 2s forwards;
+}
+
+.text-container p {
+    animation: moveInRight 2s forwards;
+}
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes moveInLeft {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes moveInRight {
+    from { opacity: 0; transform: translateX(100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+
+@media (min-width:451px) and (max-width:950px) {
+    .list-2{
+        display: none;
+    }
+    .list-1{
+        display: none;
+    }
+    .footer-info{
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .text-center-1{
+        text-align: center;
+    }
+    .image-div img{
+        height: 450px;
+        width: 550px;
+        width: 100%;
+        margin: auto;
+    }
+    .image-2-text{
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .color-yellow{
+        padding-top: 16px;
+    }
+    .image-2-div .image-div{
+        margin-top: 150px;
+    }
+    .text-befor-btn{
+        width: 60%;
+        margin: auto;
+    }
+    .news-box{
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .list-2{
+        display: none;
+    }
+    .list-1{
+        display: none;
+    }
+    .footer-info{
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .text-center-1{
+        text-align: center;
+    }
+    .image-div {
+        height: 300px;
+        width: 300px;
+        width: 100%;
+        margin: auto;
+    }
+    .image-2-div .image-div{
+        margin-top: 150px;
+    }
+    .image-2-text{
+       text-align: center;
+       padding: 0px 10px;
+    }
+    .color-yellow{
+        padding-top: 16px;
+    }
+    .news-box{
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+    }
+}
+@media screen and (max-width:350px){
+    .text-container h1{
+        font-size: 60px;
+    }
+    .all-events{
+        margin-left: 32px;
+    }
+}
+.image-div{
+    height: 420px;
+    width: 590px;
+}
+@media (min-width:951px) and (max-width:1000px){
+    .fixed-image h1{
+        font-size: 85px;
+    }
+    .list-2{
+        display: none;
+    }
+    .programs img{
+        height: 220px;
+    }
+    .first-half{
+        height: 0vh;
+    }
+}
+.news-home-page{
+    background-image: url(./images/bg.jpg);
+}
+.events-home-page{
+    background-image: url(./images/events-bg.jpg);
+}
+.event-kids-img{
+    background-image: url(./images/kids-events.jpg);
+}
+.contact-home-page{
+    background-image: url(./images/contact-home-page.jpg);
+}
+.contact-last{
+    background-image: url(./images/4blripeq.png);
+}
+.contact-form input, .contact-form textarea{
+    border-bottom: 1px solid gray;
+    padding-bottom: 8px;
+}
